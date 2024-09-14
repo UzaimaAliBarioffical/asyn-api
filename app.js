@@ -32,9 +32,9 @@ userData.then(({userInfo,postInfo})=>{
 for (let j=0;j<postInfo.length;j++){
     let mainPost =postInfo[j];
     if(mainPost.userId===mainUser.id ){
-    let createPara=document.createElement("h3");
-    createPara.innerHTML=`post : ${mainPost.userId}`
-    mainDiv.appendChild(createPara);
+    let createh3=document.createElement("h3");
+    createh3.innerHTML=`post : ${mainPost.userId}`
+    mainDiv.appendChild(createh3);
     let body=document.createElement("p");
     body.innerHTML=`post body : ${mainPost.body}`
     mainDiv.appendChild(body)
